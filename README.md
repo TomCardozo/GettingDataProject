@@ -59,4 +59,11 @@ Create the output file tidyData2.txt using write.table().  This is the file for 
 
 Check in everything and submit project.
 
+###To read the uploaded data file, this should work:
+
+    myFileLink <- "https://s3.amazonaws.com/coursera-uploads/user-5951edcf866a1c3100326779/975117/asst-3/8d81a3107b5811e599d93bffe7214f1e.txt"
+    download.file(myFileLink, "myFile.txt")
+    myTidyDataTable <- read.table("myFile.txt")
+    head(myTidyDataTable)
+
 
